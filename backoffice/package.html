@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="../static/favicon.svg?v=9e01b733" type="image/svg+xml">
+<title>Umrah Silver Ramadhan Syawal · Al-Miqat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../static/admin.css?v=c9bf02f1">
+<script src="../static/admin.js?v=4d564a10" defer></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="index.html"><b>Al-Miqat</b><span>Manager</span></a>
+    <nav aria-label="Manager">
+      <a href="index.html">Packages</a>
+      <a href="events.html">Programme events</a>
+      <a href="settings.html">Settings</a>
+      <a href="accounts.html">Accounts</a>
+      <a href="audit.html">Change log</a>
+      <a href="#">Password</a>
+      <a href="../index.html" target="_blank" rel="noopener">View site</a>
+      <form method="post" action="/admin/logout">
+        <input type="hidden" name="csrf_token" value="43H2FUn1xTJNPX2wPe9UQXgyQvFQRAp7Uf6YYJB6dTI">
+        <button type="submit" class="linklike">Sign out</button>
+      </form>
+    </nav>
+  </div>
+</header>
+<main class="page"><div class="flash">Read-only preview with sample content — signing in, saving and buttons do nothing here. The real back office saves normally.</div>
+  
+
+<div class="head-row">
+  <h1>Umrah Silver Ramadhan Syawal</h1><a class="btn ghost" href="#">Earlier versions</a>
+</div><p class="hint">Version 1, last saved 26 Oct 2026, 21:50 by seed.</p>
+
+<form method="post" class="form" id="pkgForm" data-dirty-guard>
+  <input type="hidden" name="csrf_token" value="43H2FUn1xTJNPX2wPe9UQXgyQvFQRAp7Uf6YYJB6dTI">
+  <input type="hidden" name="version" value="1">
+
+  <fieldset>
+    <legend>Basics</legend>
+    <div class="grid2">
+      
+<label for="f-name"><span>Package name <span class="req">required</span></span>
+  <input id="f-name" name="name" type="text" value="Umrah Silver Ramadhan Syawal" maxlength="80" required>
+</label>
+      
+<label for="f-slug"><span>Web address</span>
+  <input id="f-slug" name="slug" type="text" value="umrah-silver-ramadhan-syawal" maxlength="50"><small>Lowercase letters, numbers and hyphens. Left empty, it is made from the name.</small>
+</label>
+      
+<label for="f-tagline"><span>Tagline</span>
+  <input id="f-tagline" name="tagline" type="text" value="Ramadan 1448H" maxlength="80"><small>Small label above the name, e.g. Ramadan 1448H.</small>
+</label>
+      
+<label for="f-sort_order"><span>Display order</span>
+  <input id="f-sort_order" name="sort_order" type="number" value="0" min="0" max="999"><small>Lower numbers show first.</small>
+</label>
+    </div>
+    
+<label for="f-summary">Summary
+  <textarea id="f-summary" name="summary" rows="3" maxlength="6000">13 days in Madinah and Makkah over the end of Ramadan and the first days of Syawal. Six nights in Madinah, then Makkah for Hari Raya Aidilfitri.</textarea><small>One or two sentences under the package name. Up to 500 characters.</small>
+</label>
+    <div class="checks-row">
+      <label class="check"><input type="checkbox" name="published" checked> Show on the public page</label>
+      <label class="check"><input type="checkbox" name="featured" checked> Feature on the home page</label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Dates and length</legend>
+    <div class="grid2">
+      
+<label for="f-start_date"><span>Start date</span>
+  <input id="f-start_date" name="start_date" type="date" value="2027-03-02">
+</label>
+      
+<label for="f-end_date"><span>End date</span>
+  <input id="f-end_date" name="end_date" type="date" value="2027-03-14">
+</label>
+      
+<label for="f-days"><span>Days</span>
+  <input id="f-days" name="days" type="number" value="13" min="0" max="999"><small>Must match the dates when both are set.</small>
+</label>
+      
+<label for="f-nights"><span>Nights</span>
+  <input id="f-nights" name="nights" type="number" value="11" min="0" max="999">
+</label>
+      
+<label for="f-duration_label"><span>Duration shown to customers <span class="req">required</span></span>
+  <input id="f-duration_label" name="duration_label" type="text" value="13 days" maxlength="40" required><small>e.g. 13 days, 3 hours, 2 days, 1 night.</small>
+</label>
+      
+<label for="f-date_note"><span>Date note</span>
+  <input id="f-date_note" name="date_note" type="text" value="" maxlength="80"><small>e.g. 23 Ramadan – 5 Syawal 1448H.</small>
+</label>
+      
+<label for="f-availability_note"><span>Availability note</span>
+  <input id="f-availability_note" name="availability_note" type="text" value="Limited seats" maxlength="80"><small>e.g. Limited seats, Fully booked. Leave empty to hide.</small>
+</label>
+    </div>
+    <p class="hint" id="spanHint" aria-live="polite"></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Prices (BND)</legend>
+    
+<label for="f-min_guests"><span>Minimum guests <span class="req">required</span></span>
+  <input id="f-min_guests" name="min_guests" type="number" value="1" min="0" max="999" required>
+</label>
+    
+<label for="f-prices">Room prices, one per line
+  <textarea id="f-prices" name="prices" rows="4" class="mono" maxlength="6000">Quad | 4 | 4,090
+Triple | 3 | 4,490
+Double | 2 | 4,890</textarea><small>Format: Room | people sharing | price per person. Example: Quad | 4 | 4,090</small>
+</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Details</legend>
+    
+<label for="f-highlights">Highlights, one per line
+  <textarea id="f-highlights" name="highlights" rows="5" class="mono" maxlength="6000">Royal Brunei Airlines and Saudia flights
+Hotels 50 m from the Haramain
+Haramain high-speed train between the holy cities
+Mutawwif and escort staff throughout
+Ziarah in Makkah and Madinah</textarea><small>Up to 12. Shown on the home page and tour cards.</small>
+</label>
+    
+<label for="f-includes">Price includes, one per line
+  <textarea id="f-includes" name="includes" rows="5" class="mono" maxlength="6000">Economy flights with Royal Brunei Airlines and Saudia
+Tourist visa, Takaful Brunei insurance and Saudi insurance
+Air-conditioned bus, plus the Haramain high-speed train twice: Jeddah to Madinah, Madinah to Makkah
+Mutawwif and escort staff
+Hotels in Madinah and Makkah
+Zamzam water (5 litres)
+Nasi box on departure and on return
+Hotel check-in and check-out handled for you
+Baggage: 25 kg going, 40 kg returning, 7 kg hand carry</textarea>
+</label>
+    
+<label for="f-excludes">Not included, one per line
+  <textarea id="f-excludes" name="excludes" rows="4" class="mono" maxlength="6000">Excess baggage
+Cargo delivery
+Optional activities
+Ramadan Umrah day trip</textarea>
+</label>
+    
+<label for="f-itinerary">Day-by-day programme
+  <textarea id="f-itinerary" name="itinerary" rows="10" class="mono" maxlength="6000">1 | BWN – KUL | Departure
+2 | KUL – JED – Madinah | Arrive in Madinah
+3 | Madinah | Free for ibadah
+4 | Madinah | Free for ibadah
+5 | Madinah | Umrah day trip (optional)
+6 | Madinah | Free for ibadah
+7 | Madinah | Madinah city tour
+8 | Madinah – Makkah | First Umrah
+9 | Makkah | Makkah city tour
+10 | Makkah | Free for ibadah
+11 | Makkah | Free for ibadah
+12 | Makkah – Jeddah | Return journey
+13 | Jeddah – KUL – BWN | Arrive home</textarea><small>One line per day: Day | Route | Activity. Example: 8 | Madinah – Makkah | First Umrah</small>
+</label>
+    <div class="chips-row" data-insert-target="f-itinerary">
+      <span class="hint">Add the next day with one click:</span><button type="button" class="chip-btn">City tour</button><button type="button" class="chip-btn">Free for ibadah</button><button type="button" class="chip-btn">Madinah city tour</button>
+      <a class="hint" href="events.html">Manage events</a>
+    </div>
+    
+<label for="f-hotels">Hotels
+  <textarea id="f-hotels" name="hotels" rows="3" class="mono" maxlength="6000">Madinah | 6 | Grand Plaza Badr | 50 m
+Makkah | 4 | Clock Tower | 50 m</textarea><small>Format: City | nights | Hotel name | distance. Example: Makkah | 4 | Clock Tower | 50 m</small>
+</label>
+    
+<label for="f-visits">Ziarah visits
+  <textarea id="f-visits" name="visits" rows="8" class="mono" maxlength="6000">Makkah | Jabal Tsur
+Makkah | Arafah and Jabal Rahmah
+Makkah | Muzdalifah
+Makkah | Mina
+Makkah | Jabal Nur and the Wahyu Museum
+Madinah | Masjid Quba
+Madinah | Date farm and market
+Madinah | Jabal Uhud
+Madinah | Site of the Battle of Uhud
+Madinah | Masjid Qiblatain</textarea><small>Format: City | Place. Example: Madinah | Masjid Quba</small>
+</label>
+    <div class="grid2">
+<label for="f-notes_title"><span>Extra card title</span>
+  <input id="f-notes_title" name="notes_title" type="text" value="Al-Miqat gift set" maxlength="60"><small>e.g. Al-Miqat gift set.</small>
+</label></div>
+    
+<label for="f-notes">Extra card text
+  <textarea id="f-notes" name="notes" rows="3" maxlength="6000">Hand carry bag, small bag, slipper bag, travel prayer mat, Umrah guidebook, wudhu spray and lanyard.</textarea>
+</label>
+  </fieldset>
+
+  <div class="actions-row">
+    <button class="btn" type="submit">Save package</button>
+    <a class="btn ghost" href="index.html">Cancel</a>
+  </div>
+</form>
+<form method="post" action="/admin/packages/1/delete" class="form danger" data-confirm-slug="umrah-silver-ramadhan-syawal">
+  <input type="hidden" name="csrf_token" value="43H2FUn1xTJNPX2wPe9UQXgyQvFQRAp7Uf6YYJB6dTI">
+  <h2>Delete this package</h2>
+  <p>To hide it for a while, untick "Show on the public page" instead. To delete it, type <code>umrah-silver-ramadhan-syawal</code> below.</p>
+  <label for="confirm">Web address<input id="confirm" name="confirm" autocomplete="off" maxlength="50"></label>
+  <button class="btn danger-btn" type="submit" disabled>Delete package</button>
+</form>
+
+</main>
+</body>
+</html>

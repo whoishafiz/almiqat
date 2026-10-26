@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="../static/favicon.svg?v=9e01b733" type="image/svg+xml">
+<title>Sign in · Al-Miqat</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../static/admin.css?v=c9bf02f1">
+</head>
+<body class="center-page">
+  <main class="login-card">
+    <div class="eyebrow">Al-Miqat Manager</div>
+    <h1>Sign in</h1>
+    <form method="post" class="form">
+      <input type="hidden" name="csrf_token" value="dOnadPfUFPFH8iVYWT6_SMxfGj9Fic66gAgimKehJlA">
+      <label for="username">Username<input id="username" name="username" autocomplete="username" required maxlength="64" autofocus></label>
+      <label for="password">Password<input id="password" name="password" type="password" autocomplete="current-password" required maxlength="256"></label>
+      <button class="btn" type="submit">Sign in</button>
+    </form>
+    <p class="hint">After 5 wrong attempts, sign-in is paused for 15 minutes.</p>
+  </main>
+</body>
+</html>

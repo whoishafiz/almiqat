@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="../static/favicon.svg?v=9e01b733" type="image/svg+xml">
+<title>Settings · Al-Miqat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../static/admin.css?v=c9bf02f1">
+<script src="../static/admin.js?v=4d564a10" defer></script>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="index.html"><b>Al-Miqat</b><span>Manager</span></a>
+    <nav aria-label="Manager">
+      <a href="index.html">Packages</a>
+      <a href="events.html">Programme events</a>
+      <a href="settings.html">Settings</a>
+      <a href="accounts.html">Accounts</a>
+      <a href="audit.html">Change log</a>
+      <a href="#">Password</a>
+      <a href="../index.html" target="_blank" rel="noopener">View site</a>
+      <form method="post" action="/admin/logout">
+        <input type="hidden" name="csrf_token" value="43H2FUn1xTJNPX2wPe9UQXgyQvFQRAp7Uf6YYJB6dTI">
+        <button type="submit" class="linklike">Sign out</button>
+      </form>
+    </nav>
+  </div>
+</header>
+<main class="page"><div class="flash">Read-only preview with sample content — signing in, saving and buttons do nothing here. The real back office saves normally.</div>
+  
+<h1>Site settings</h1>
+<form method="post" class="form" data-dirty-guard>
+  <input type="hidden" name="csrf_token" value="43H2FUn1xTJNPX2wPe9UQXgyQvFQRAp7Uf6YYJB6dTI">
+  <fieldset>
+    <legend>Contact</legend>
+    <div class="grid2">
+      <label for="whatsapp"><span>WhatsApp number <span class="req">required</span></span>
+        <input id="whatsapp" name="whatsapp" value="6737139653" maxlength="20" inputmode="tel" required>
+        <small>With country code, e.g. 6737139653. Every booking button on the site opens a chat with this number.</small></label>
+      <label for="office_phone">Office phone<input id="office_phone" name="office_phone" value="+673 258 2107" maxlength="20"></label>
+      <label for="instagram">Instagram<input id="instagram" name="instagram" value="almiqattravel" maxlength="31"></label>
+      <label for="tiktok">TikTok<input id="tiktok" name="tiktok" value="almiqat.travel.bn" maxlength="31"></label>
+      <label for="tours_instagram">Brunei tours Instagram<input id="tours_instagram" name="tours_instagram" value="almiqat.bruneitours" maxlength="31"></label>
+      <label for="company_name"><span>Company name <span class="req">required</span></span><input id="company_name" name="company_name" value="Al-Miqat Travel &amp; Tours Sdn Bhd" maxlength="80" required></label>
+      <label for="payment_note">Payment note
+        <input id="payment_note" name="payment_note" value="Pay in full or by monthly standing order — ask us about a payment plan." maxlength="160">
+        <small>Shown under package prices and on the contact page, e.g. "Pay in full or by monthly standing order". Leave empty to hide.</small></label>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Home page</legend>
+    <label for="hero_title"><span>Headline <span class="req">required</span></span>
+      <input id="hero_title" name="hero_title" value="Your Umrah, steps from the *Haramain*." maxlength="120" required>
+      <small>Put *asterisks* around a word to show it in gold.</small></label>
+    <label for="hero_lede"><span>Intro text <span class="req">required</span></span>
+      <textarea id="hero_lede" name="hero_lede" rows="3" maxlength="400" required>Fly with Royal Brunei and Saudia, stay close to the Haramain and travel between the holy cities on the high-speed train. A mutawwif guides you throughout.</textarea></label>
+    <label for="announcement">Announcement bar
+      <input id="announcement" name="announcement" value="" maxlength="120">
+      <small>A short line shown under the menu on every page, e.g. "Only 9 seats left for Umrah Silver". Leave empty to hide.</small></label>
+  </fieldset>
+  <div class="actions-row"><button class="btn" type="submit">Save settings</button></div>
+</form>
+
+</main>
+</body>
+</html>
